@@ -2,14 +2,50 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Roboto;
 }
 
 :root {
-    --main-background: #EEEEEE;
-    --text-color: #0f172a;
+    --main-background: #1b4965;
+    --text-color: #ffffff;
+    --cor-nav: #ff6b6b;
 }
 
 body {
     background-color: var(--main-background);
     color: var(--text-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: var(--cor-nav);
+    width: fit-content;
+    border-radius: 30px;
+    padding: 1.5rem;
+}
+
+ul,li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #EEEEEE;
+    font-weight: 700;
+}
+
+a:hover {
+    color: var(--text-color);
+    text-decoration: underline;
 }
